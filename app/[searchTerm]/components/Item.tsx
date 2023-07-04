@@ -6,6 +6,7 @@ type Props = {
 };
 
 export default function Item({ result }: Props) {
+  console.log(result);
   const itemTextCol = (
     <div className="flex flex-col justify-center">
       <h2>
@@ -26,6 +27,7 @@ export default function Item({ result }: Props) {
       <div className="flex flex-row gap-4">
         <div className="flex flex-col justify-center">
           <Image
+            unoptimized
             src={result.thumbnail.source}
             alt={result.title}
             width={result.thumbnail.width}
